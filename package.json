@@ -1,0 +1,53 @@
+{
+  "name": "sandbox-react-ts",
+  "version": "0.0.1",
+  "description": "Test project with React and TypeScript implementation",
+  "main": "src/app.ts",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.1.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.1",
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "fuse-box": "~3.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.1.4",
+    "ts-jest": "^22.0.3",
+    "typescript": "^2.7.1",
+    "uglify-es": "^3.3.9",
+    "uglify-js": "^3.3.9"
+  },
+  "scripts": {
+    "start": "node fuse.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steppefox/sandbox-react-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "fuse"
+  ],
+  "author": "Eldar Amantay <amantay.eldar@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "identity-obj-proxy"
+    }
+  }
+}
